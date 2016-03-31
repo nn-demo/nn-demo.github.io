@@ -20,12 +20,18 @@
 
   <link rel="stylesheet" href="styles/lib-1392290de7.css">
 
-  <link rel="stylesheet" href="styles/app-56fb6a32b6.css">
+  <link rel="stylesheet" href="styles/app-bc8b7189cb.css">
 </head>
 
 <body>
 
-  <div id="app" class="outer" ng-include="'app/layout/shell.html'" ng-controller="ShellController as vm">
+  <div style="width:100%; height: 100%;">
+    <div id="app" class="outer"
+      ng-include="'app/layout/shell.html'"
+      ng-controller="ShellController as vm">
+    </div>
+    <div id="app" class="overlay overlay--splash" ng-show="showSplash">
+    </div>
   </div>
 
   <div id="scripts" style="display: none">
@@ -34,7 +40,7 @@
 
     <script src="js/lib-2fb9ef97c2.js"></script>
 
-    <script src="js/app-59eb48d74c.js"></script>
+    <script src="js/app-009c7434d7.js"></script>
   </div>
 </body>
 
